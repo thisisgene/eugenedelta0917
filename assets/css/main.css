@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'DIN alt';
+  src: url(../fonts/din1451alt.ttf); }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'DIN alt';
+  font-size: 16px;
+  color: white;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  @media (max-width: 920px) {
+    body {
+      width: 100vw;
+      background-image: url(../img/background.jpg);
+      background-size: cover; } }
+  body a {
+    color: white;
+    display: inline-block;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
+    body a:hover {
+      color: rgba(139, 255, 248, 0.4);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+  body #backdrop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.6); }
+    @media (max-width: 920px) {
+      body #backdrop {
+        width: 100vw; }
+        body #backdrop .main-container {
+          margin: 0 auto; } }
+    body #backdrop .header {
+      position: fixed;
+      width: 100%;
+      height: 5rem;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5rem;
+      box-sizing: border-box; }
+      body #backdrop .header .title {
+        font-family: "Helvetica Neue";
+        font-weight: 100;
+        font-size: 3vw;
+        color: #8BFFF8; }
+      body #backdrop .header .sub-title {
+        font-family: Georgia;
+        font-style: italic;
+        font-size: 3vw;
+        color: #FF7EDE; }
+      @media (max-width: 920px) {
+        body #backdrop .header {
+          padding: 0 2rem; }
+          body #backdrop .header .title {
+            font-size: 1.6rem; }
+          body #backdrop .header .sub-title {
+            font-size: 1.2rem; } }
+    body #backdrop .main-container {
+      width: 500px;
+      margin: 10rem auto 0;
+      color: white; }
+      body #backdrop .main-container .big-container {
+        font-size: 3.5rem;
+        letter-spacing: 6px;
+        line-height: 1px; }
+      body #backdrop .main-container .med-container {
+        padding-top: 2rem;
+        font-size: 2rem;
+        letter-spacing: 6px;
+        line-height: 1px; }
+      body #backdrop .main-container .small-container {
+        padding-top: 2rem;
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        line-height: 1px; }
