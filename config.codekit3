@@ -27,6 +27,12 @@
 		"oAP": "\/.idea\/modules.xml",
 		"oF": 0
 		},
+	"\/.idea\/vcs.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/vcs.xml",
+		"oF": 0
+		},
 	"\/.idea\/workspace.xml": {
 		"ft": 8192,
 		"oA": 2,
@@ -96,6 +102,16 @@
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/din1451alt.ttf",
 		"oF": 0
+		},
+	"\/assets\/img\/backDark.jpg": {
+		"ft": 16384,
+		"iS": 485709,
+		"oA": 0,
+		"oAP": "\/assets\/img\/backDark.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/img\/background.jpg": {
 		"ft": 16384,

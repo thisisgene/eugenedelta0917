@@ -26,7 +26,7 @@ body {
     body a:hover {
       color: rgba(139, 255, 248, 0.4);
       -webkit-transform: scale(1.1, 1.1);
-      transform: scale(1.1, 1.1); }
+      transform: scale(1.1, 1.4) rotateZ(-3deg) skewX(-30deg); }
   body #backdrop {
     position: absolute;
     top: 0;
