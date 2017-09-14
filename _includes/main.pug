@@ -1,25 +1,62 @@
 #backdrop
   .header
     .title EUGENE DELTA
-    .sub-title ... for all things to come
+    .sub-title.noselect
+      .moon
+      .sun
+      span ... for all things to come
+
 
   .main-container
     .big-container
-      p BLACK DOGS EP
-      p OUT NOW!
-      p: a(href='') ITUNES
-      p: a(href='') GOOGLEPLAY
-      p: a(href='') AMAZON
-      p: a(href='') SPOTIFY
+      a(href='https://www.facebook.com/events/2014026278828299')
+        p BLACK DOGS EP
+        p Release Party
+        p Oct. 26
+        p B72 VIENNA
+      //p OUT NOW!
+      //p: a(href='') ITUNES
+      //p: a(href='') GOOGLEPLAY
+      //p: a(href='') AMAZON
+      //p: a(href='') SPOTIFY
     .med-container
-      p OLDER NEWS
+      p OTHER NEWS
       p: a(href='') SO LONG VIDEO
       p: a(href='') BLACK DOGS LIVE VIDEO
       br
       br
       br
       p CONTACT & BOOKING
-      p: a(href='') contact@eugenedetla.com
+      p: a(href='') contact@eugenedelta.com
+      br
+      .newsletter
+        p NEWSLETTER
+        // Begin MailChimp Signup Form
+        link(href='//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css', rel='stylesheet', type='text/css')
+
+        #mc_embed_signup
+          form#mc-embedded-subscribe-form.validate(action='//eugenedelta.us15.list-manage.com/subscribe/post?u=b9321a8c2677e57b97cfebee7&id=9dd567bfa5', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+            #mc_embed_signup_scroll
+              input#mce-EMAIL.email(type='email', value='', name='EMAIL', placeholder='email address', required='')
+              // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+              div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                input(type='text', name='b_b9321a8c2677e57b97cfebee7_9dd567bfa5', tabindex='-1', value='')
+              .clear
+                a
+                  input#mc-embedded-subscribe.button(type='submit', value='Subscribe', name='subscribe')
+        // End mc_embed_signup
+
     .small-container
+      .socialmedia
+        p
+          a(href='') facebook
+          a(href='') instagram
+          a(href='') twitter
+      br
       p © 2017 by Eugene Delta
       p All Rights Reserved.
+
+
+script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js', data-dojo-config='usePlainJson: true, isDebug: false')
+script(type='text/javascript').
+  require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"b9321a8c2677e57b97cfebee7","lid":"9dd567bfa5"}) })

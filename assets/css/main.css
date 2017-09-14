@@ -2,6 +2,14 @@
   font-family: 'DIN alt';
   src: url(../fonts/din1451alt.ttf); }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 html, body {
   margin: 0;
   padding: 0; }
@@ -10,13 +18,13 @@ body {
   font-family: 'DIN alt';
   font-size: 16px;
   color: white;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/backBlue.jpg);
   background-size: cover;
   background-attachment: fixed; }
   @media (max-width: 920px) {
     body {
       width: 100vw;
-      background-image: url(../img/background.jpg);
+      background-image: url(../img/backBlue.jpg);
       background-size: cover; } }
   body a {
     color: white;
@@ -56,17 +64,70 @@ body {
         font-size: 3vw;
         color: #8BFFF8; }
       body #backdrop .header .sub-title {
-        font-family: Georgia;
+        position: relative;
+        display: block;
+        padding: 0 .5rem;
+        font-family: "Times New Roman";
         font-style: italic;
-        font-size: 3vw;
-        color: #FF7EDE; }
+        font-size: 2.4vw;
+        font-weight: 100;
+        color: #FF7EDE;
+        cursor: default; }
+        body #backdrop .header .sub-title span {
+          position: relative;
+          z-index: 12;
+          display: inline-block;
+          transition: all 200ms ease-in-out; }
+        body #backdrop .header .sub-title .moon {
+          z-index: 5;
+          position: absolute;
+          top: 0;
+          right: -.2vw;
+          background: black;
+          display: inline-block;
+          height: 2.5vw;
+          width: 2.5vw;
+          border-radius: 50%; }
+        body #backdrop .header .sub-title .sun {
+          z-index: 4;
+          position: absolute;
+          top: 0;
+          right: -.2vw;
+          background: white;
+          display: inline-block;
+          height: 2.5vw;
+          width: 2.5vw;
+          border-radius: 50%;
+          transition: all 200ms ease-in-out; }
+        body #backdrop .header .sub-title:hover span {
+          color: white;
+          filter: drop-shadow(0px 0px 3px red);
+          transform: translateX(-14px); }
+        body #backdrop .header .sub-title:hover .sun {
+          right: -.7vw;
+          filter: drop-shadow(0px 0px 3px red); }
       @media (max-width: 920px) {
         body #backdrop .header {
           padding: 0 2rem; }
           body #backdrop .header .title {
             font-size: 1.6rem; }
           body #backdrop .header .sub-title {
-            font-size: 1.2rem; } }
+            font-size: 1.2rem; }
+            body #backdrop .header .sub-title .moon, body #backdrop .header .sub-title .sun {
+              height: 6.5vw;
+              width: 6.5vw; } }
+      @media (max-width: 350px) {
+        body #backdrop .header {
+          padding: 0 1rem; }
+          body #backdrop .header .title {
+            display: inline-block;
+            font-size: 1.8rem; }
+          body #backdrop .header .sub-title {
+            display: inline-block;
+            font-size: 1.4rem; }
+            body #backdrop .header .sub-title .moon, body #backdrop .header .sub-title .sun {
+              height: 6.5vw;
+              width: 6.5vw; } }
     body #backdrop .main-container {
       width: 500px;
       margin: 10rem auto 0;
@@ -74,14 +135,28 @@ body {
       body #backdrop .main-container .big-container {
         font-size: 3.5rem;
         letter-spacing: 6px;
-        line-height: 1px; }
+        line-height: 1px;
+        padding: 0 .5rem; }
       body #backdrop .main-container .med-container {
         padding-top: 2rem;
         font-size: 2rem;
         letter-spacing: 6px;
         line-height: 1px; }
+        body #backdrop .main-container .med-container p {
+          padding: 0 .5rem; }
+        body #backdrop .main-container .med-container .newsletter p {
+          margin-bottom: .5rem; }
+        body #backdrop .main-container .med-container .newsletter #mc_embed_signup_scroll {
+          background: rgba(255, 255, 255, 0.6);
+          padding: 1rem; }
+          body #backdrop .main-container .med-container .newsletter #mc_embed_signup_scroll input {
+            background: black;
+            color: white; }
       body #backdrop .main-container .small-container {
         padding-top: 2rem;
         font-size: 1.4rem;
         letter-spacing: 6px;
-        line-height: 1px; }
+        line-height: 1px;
+        text-align: center; }
+        body #backdrop .main-container .small-container .socialmedia a {
+          margin-right: 1rem; }
