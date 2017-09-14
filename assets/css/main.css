@@ -20,7 +20,8 @@ body {
   color: white;
   background-image: url(../img/backBlue.jpg);
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  min-height: 100%; }
   @media (max-width: 920px) {
     body {
       width: 100vw;
@@ -38,13 +39,14 @@ body {
   body #backdrop {
     position: absolute;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
     height: auto;
     min-height: 100%;
     background: rgba(0, 0, 0, 0.6); }
     @media (max-width: 920px) {
       body #backdrop {
-        width: 100vw; }
+        width: 100%; }
         body #backdrop .main-container {
           margin: 0 auto; } }
     body #backdrop .header {
@@ -114,24 +116,54 @@ body {
           body #backdrop .header .sub-title {
             font-size: 1.2rem; }
             body #backdrop .header .sub-title .moon, body #backdrop .header .sub-title .sun {
-              height: 6.5vw;
-              width: 6.5vw; } }
-      @media (max-width: 350px) {
+              display: none; } }
+      @media (max-width: 430px) {
         body #backdrop .header {
-          padding: 0 1rem; }
+          padding: 0 0.5rem; }
           body #backdrop .header .title {
             display: inline-block;
-            font-size: 1.8rem; }
+            font-size: 1.6rem; }
           body #backdrop .header .sub-title {
             display: inline-block;
-            font-size: 1.4rem; }
+            font-size: 1.1rem; }
             body #backdrop .header .sub-title .moon, body #backdrop .header .sub-title .sun {
-              height: 6.5vw;
-              width: 6.5vw; } }
+              display: none; } }
+      @media (max-width: 370px) {
+        body #backdrop .header {
+          padding: 0 0.2rem; }
+          body #backdrop .header .title {
+            display: inline-block;
+            font-size: 1.4rem; }
+          body #backdrop .header .sub-title {
+            display: inline-block;
+            font-size: 1rem; }
+            body #backdrop .header .sub-title .moon, body #backdrop .header .sub-title .sun {
+              display: none; } }
     body #backdrop .main-container {
       width: 500px;
       margin: 10rem auto 0;
       color: white; }
+      @media (max-width: 510px) {
+        body #backdrop .main-container {
+          width: auto; }
+          body #backdrop .main-container .big-container {
+            font-size: 2.8rem !important; }
+          body #backdrop .main-container .med-container {
+            font-size: 1.5rem !important; } }
+      @media (max-width: 420px) {
+        body #backdrop .main-container {
+          width: auto; }
+          body #backdrop .main-container .big-container {
+            font-size: 2.4rem !important; }
+          body #backdrop .main-container .med-container {
+            font-size: 1.2rem !important; } }
+      @media (max-width: 370px) {
+        body #backdrop .main-container {
+          width: auto; }
+          body #backdrop .main-container .big-container {
+            font-size: 2rem !important; }
+          body #backdrop .main-container .med-container {
+            font-size: 1rem !important; } }
       body #backdrop .main-container .big-container {
         font-size: 3.5rem;
         letter-spacing: 6px;
@@ -158,5 +190,13 @@ body {
         letter-spacing: 6px;
         line-height: 1px;
         text-align: center; }
-        body #backdrop .main-container .small-container .socialmedia a {
-          margin-right: 1rem; }
+        body #backdrop .main-container .small-container .socialmedia {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          body #backdrop .main-container .small-container .socialmedia p {
+            padding-bottom: 1rem;
+            margin-right: 1rem; }
+          @media (max-width: 440px) {
+            body #backdrop .main-container .small-container .socialmedia {
+              display: block; } }
